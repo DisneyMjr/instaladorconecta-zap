@@ -286,9 +286,10 @@ system_node_install() {
 
   sleep 2
 
-  sudo su - root <<EOF
+sudo su - root <<EOF
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-sudo apt-get install -y nodejs=20.17-1nodesource1
+sudo apt-get updated
+sudo apt-get install -y nodejs=20.17.0-1nodesource1
 sleep 2
 sudo npm install -g npm@latest
 sleep 2
